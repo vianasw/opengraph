@@ -1,6 +1,10 @@
 # encoding: utf-8
 
-import re
+try:
+    import re2 as re
+except ImportError:
+    import re
+
 import urllib2
 try:
     from bs4 import BeautifulSoup
